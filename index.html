@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gukan M - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for the embedded PDF viewer */
+        .resume-pdf-viewer {
+            width: 100%;
+            height: 800px; /* Set a fixed height for the viewer */
+            border: 2px solid #3b82f6; /* Blue border for visibility */
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+            overflow: hidden; /* Ensures the iframe stays within the border-radius */
+        }
+        .resume-pdf-viewer iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .download-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ffd700; /* Gold/Yellow button */
+            color: #1f2937; /* Dark text */
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.2s;
+            margin-bottom: 20px;
+        }
+        .download-btn:hover {
+            background-color: #e6c200;
+            transform: translateY(-2px);
+        }
+        /* Add basic structure styles if they were missing from the external CSS */
+        .section { padding: 80px 0; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .section-title { text-align: center; margin-bottom: 40px; font-size: 2.5rem; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Gukan M</div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#resume" class="nav-link">Resume</a></li>
+                <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+            <div class="home-container">
+                <div class="home-image-placeholder">
+                    <img src="WhatsApp Image 2025-11-18 at 10.59.35_a8743a75.jpg" class="profile-image">
+                </div>
+            <div class="home-content">
+                <h1 class="home-title">Gukan M</h1>
+                <p class="home-subtitle">B.Tech IT Student (Web Developer)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am Gukan M, a passionate first-year B.Tech IT student with a strong foundation in web development and programming. 
+                        My journey in technology began with a keen interest in creating innovative solutions and building user-friendly applications. 
+                        I have demonstrated my skills through various projects including web development, healthcare applications using Generative AI, 
+                        and e-commerce platforms. My recent achievement includes winning 1st prize at HackNext 2.0 - 2025 with Team CodeZoro, 
+                        showcasing my ability to work collaboratively and deliver exceptional results under pressure.
+                    </p>
+                    <p>
+                        I am continuously expanding my knowledge in programming languages like Python,JavaScript, HTML, and CSS, while also developing 
+                        proficiency in office productivity tools. My goal is to become a well-rounded software engineer who can contribute 
+                        meaningly to the tech industry through innovative projects and solutions.
+                    </p>
+                </div>
+                <div class="about-data">
+                    <div class="about-image-placeholder">
+                        <img src="kurama.jpg" class="profile-image">
+                    </div>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📅</span>
+                            <span class="detail-label">Date of Birth:</span>
+                            <span class="detail-value">20.10.2007</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💼</span>
+                            <span class="detail-label">LinkedIn:</span>
+                            <a href="https://www.linkedin.com/in/gukan-m-400279383/" class="detail-value accent-link" target="_blank">Gukan M</a>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📧</span>
+                            <span class="detail-label">Email:</span>
+                            <a href="mailto:gukan477@gmail.com" class="detail-value accent-link">gukan477@gmail.com</a>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📱</span>
+                            <span class="detail-label">Phone:</span>
+                            <span class="detail-value">9363216521</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">📍</span>
+                            <span class="detail-label">City:</span>
+                            <span class="detail-value">827V+878, Kothamangalam - Maramadakki Main Rd, Kothamangalam North, Tamil Nadu 614624</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">💻</span>
+                            <span class="detail-label">GitHub:</span>
+                            <a href="https://github.com/gukan11" class="detail-value accent-link" target="_blank">gukan11</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Projects Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">Experience & Projects</h2>
+            
+            <div class="hackathon-highlight">
+                <div class="hackathon-card">
+                    <div class="hackathon-badge">🏆 Winner</div>
+                    <h3 class="hackathon-title">HackNext 2.0 - 2025</h3>
+                    <p class="hackathon-achievement">Won 1st Prize with Team CodeZoro</p>
+                </div>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Simple Self Website</h3>
+                    <p class="project-description">A personal portfolio website showcasing my work and skills.</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Shopping Website</h3>
+                    <p class="project-description">An e-commerce platform with modern UI and shopping cart functionality.</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">Health Care in GenAI</h3>
+                    <p class="project-description">Healthcare application leveraging Generative AI for medical assistance.</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-title">BMC of Uber</h3>
+                    <p class="project-description">Business Model Canvas analysis of Uber, exploring key partners, activities, and revenue streams.</p>
+                </div>
+            </div>
+
+            <div class="coding-practice">
+                <h3 class="practice-title">Coding Practice</h3>
+                <div class="practice-cards">
+                    <div class="practice-card">
+                        <h4>LeetCode</h4>
+                        <p>Active on LeetCode: <a href="https://leetcode.com/u/Gukan_M11/" class="accent-link" target="_blank">Gukan_M11</a></p>
+                    </div>
+                    <div class="practice-card">
+                        <h4>Exercism</h4>
+                        <p>Active on Exercism: <a href="https://exercism.org/profiles/intro" class="accent-link" target="_blank">Gukan11</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">Python</span>
+                        <span class="skill-percentage">65%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="65"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">C</span>
+                        <span class="skill-percentage">50%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="50"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">MS-Word</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-header">
+                        <span class="skill-name">MS-Excel</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-percentage="80"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+        <div class="container">
+            <h2 class="section-title">Resume</h2>
+            <div class="resume-content">
+                <!-- Set the href to point to the uploaded PDF file for direct download -->
+                <a href="Gukan Resume.pdf" class="download-btn" id="download-cv" download="Gukan-M-Resume.pdf">Download My CV</a>
+                
+                <!-- Updated: Embedded PDF using iframe, pointing to the uploaded file -->
+                <div class="resume-pdf-viewer">
+                    <iframe src="Gukan Resume.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary" class="section summary-section">
+        <div class="container">
+            <h2 class="section-title">Summary</h2>
+            <div class="summary-content">
+                <div class="summary-text">
+                    <p>
+                        As a dedicated first-year B.Tech IT student, I am building a strong foundation in computer science and information technology. 
+                        My academic journey is complemented by hands-on experience in web development, where I have created several functional projects 
+                        including personal websites, e-commerce platforms, and AI-powered healthcare applications. My recent victory at HackNext 2.0 - 2025 
+                        demonstrates my ability to collaborate effectively in team environments and deliver innovative solutions.
+                    </p>
+                    <p>
+                        I am proficient in multiple programming languages and web technologies, with a particular strength in front-end development. 
+                        My commitment to continuous learning is evident through my active participation in coding practice platforms like LeetCode and Exercism. 
+                        I am eager to apply my skills to real-world challenges and contribute to meaningful technological advancements.
+                    </p>
+                </div>
+                <div class="summary-highlights">
+                    <div class="highlight-section">
+                        <h3>Education</h3>
+                        <ul>
+                            <li>B.Tech in Information Technology (First Year)</li>
+                            <li>Currently pursuing degree with focus on software development and web technologies</li>
+                        </ul>
+                    </div>
+                    <div class="highlight-section">
+                        <h3>Top Projects</h3>
+                        <ul>
+                            <li><a href="#experience" class="accent-link">Simple Self Website</a></li>
+                            <li><a href="#experience" class="accent-link">Shopping Website</a></li>
+                            <li><a href="#experience" class="accent-link">Health Care in GenAI</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-details-list">
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">📱</span>
+                            <span>9363216521</span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">📧</span>
+                            <span>gukan477@gmail.com</span>
+                        </div>
+                        <div class="contact-detail-item">
+                            <span class="contact-icon">📍</span>
+                            <span>827V+878, Kothamangalam - Maramadakki Main Rd, Kothamangalam North, Tamil Nadu 614624</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/gukan-m-400279383/" class="social-link" target="_blank">LinkedIn</a>
+                            <a href="https://github.com/gukan11" class="social-link" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=79.0163311%2C10.3053902%2C79.0563311%2C10.3453902&layer=mapnik&marker=10.3253902%2C79.0363311"
+                            width="100%" 
+                            height="300" 
+                            frameborder="0" 
+                            style="border: 2px solid #ffd700; border-radius: 8px;">
+                        </iframe>
+                        <p class="map-note">827V+878, Kothamangalam - Maramadakki Main Rd, Kothamangalam North, Tamil Nadu 614624</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Gukan M. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
